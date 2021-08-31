@@ -19,7 +19,7 @@ export default function Homepage(props) {
 
   useEffect(() => {
     dispatch(fetch_posts());
-  }, []);
+  }, [dispatch]);
 
   const uploadPost = () => {
     dispatch(
