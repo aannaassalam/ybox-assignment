@@ -1,0 +1,114 @@
+.homepage {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage .heading {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto 40px;
+}
+
+.homepage .heading h2 {
+  font-size: 28px;
+  color: #222;
+  font-weight: 600;
+}
+
+.homepage .heading .newBtn {
+  text-transform: capitalize;
+}
+
+.homepage .heading .newBtn i {
+  margin-right: 10px;
+}
+
+.homepage .noPostAvailable {
+  display: inline-block;
+  margin: 50px auto;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.homepage .endOfPage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 230px;
+  margin: 0 auto;
+}
+
+.homepage .endOfPage p {
+  font-size: 14px;
+  color: #aaa;
+  font-weight: 500;
+}
+
+.homepage .endOfPage::before,
+.homepage .endOfPage::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #ddd;
+}
+
+.modal {
+  width: 450px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: none;
+}
+
+.modal .head {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.modal .head h4 {
+  color: #222;
+  font-weight: 600;
+}
+
+.modal .head i {
+  cursor: pointer;
+}
+
+.modal .body {
+  padding: 15px 10px;
+}
+
+.modal .body .body-input {
+  margin-top: 10px;
+}
+
+.modal .body .body-input .MuiInputBase-inputMultiline {
+  min-height: 100px;
+}
+
+.modal .footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 10px;
+  border-top: 1px solid #dfdfdf;
+}
+
+.modal .footer button:first-child {
+  margin-right: 10px;
+}
+
+@media (max-width: 468px) {
+  .modal {
+    width: 95%;
+  }
+}
