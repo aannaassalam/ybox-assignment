@@ -12,8 +12,8 @@ function Navbar() {
           All Posts
         </a>
         <a
-          href="/new-posts"
-          className={location.pathname === "/new-posts" && "active"}
+          href="/newPosts"
+          className={location.pathname === "/newPosts" && "active"}
         >
           New Posts
         </a>
